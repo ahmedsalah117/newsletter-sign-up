@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useContext, useEffect } from "react";
+import MainCard from "./../src/Components/MainCard/MainCard.jsx";
+import Message from "./Components/Message/Message";
+import UserContextProvider, { userContext } from "./Context/Store.js";
+import TransitionComponent from "./Components/TransitionComponent/Test.jsx";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserContextProvider>
+      <section className="vh-100 main-sec d-flex justify-content-center align-items-center">
+        <TransitionComponent />
+      </section>
+    </UserContextProvider>
   );
 }
 

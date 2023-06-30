@@ -1,0 +1,134 @@
+@use "./../Helpers/colors" as *;
+@use "./../Helpers/fonts" as *;
+@use "./../Helpers/mixins" as *;
+
+.form-info {
+  margin-top: 1rem;
+  width: 100%;
+
+  h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .form-info {
+    width: 100% !important;
+    margin-top: 2rem !important;
+    h1 {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-top: 1.5rem;
+    }
+    &__list {
+      list-style: none;
+      padding: 0;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .form-info {
+    width: 100% !important;
+    margin-top: 2rem !important;
+    h1 {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-top: 1.5rem;
+    }
+    &__list {
+      list-style: none;
+      padding: 0;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 926px) {
+  .form-info {
+    width: 100% !important;
+    margin-top: 2rem !important;
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-top: 1.5rem;
+    }
+    &__list {
+      list-style: none;
+      padding: 0;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+}
+
+@media screen and (min-width: 927px) and (max-width: 992px) {
+  .form-info {
+    width: 100% !important;
+    margin-top: 2rem !important;
+    h1 {
+      font-size: 1.7rem;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-top: 1.5rem;
+    }
+    &__list {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .form-info {
+    width: 100% !important;
+    margin-top: 4rem !important;
+    h1 {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-top: 1.5rem;
+    }
+    &__list {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+  }
+}

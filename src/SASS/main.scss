@@ -1,0 +1,19 @@
+@use "./Helpers/colors" as *;
+@use "./Helpers/fonts" as *;
+@use "./Helpers/mixins" as *;
+@use "./ComponentStyle/Form";
+@use "./ComponentStyle/FormInfo";
+@use "./ComponentStyle/MainCard";
+@use "./ComponentStyle/Message";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main-sec {
+  background-color: $background-main;
+}
+body {
+  font-family: $main-font;
+  color: $text-color;
+}
